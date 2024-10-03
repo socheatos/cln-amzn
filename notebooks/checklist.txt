@@ -1,0 +1,14 @@
+[x] drop columns: 'imageURL','imageURLHighRes','date','tech1','tech2','details'(&'fit'this is just html code)
+[x] drop where features == null, description==null bc we're using alot of nlp to check similarities
+[x] price drop '$', change str -> long
+[x] change description from Array -> String
+[x] parse `feature` to Array of Dictionary
+[x] drop nas
+[x] modify ranking -> int
+[ ] separate categories, drop cats that are unrelated
+[ ] double check categories to the item title: somehow get all words related to clothing, jewerly and shoes
+    - bc even when the rank & categories are wrong, the item might still be related
+    - dont rely on `main_cat` fix category
+            - check the rank, if it has a 'clothing blah blah' rank it's a clothing item despite everyting else
+
+
